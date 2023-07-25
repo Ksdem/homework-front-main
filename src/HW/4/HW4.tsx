@@ -21,9 +21,7 @@ export const HW4 = () => {
         setTexts([...texts, currentText]);
         setCurrentText('');
     };
-    const h = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setCurrentText(event.target.value)
-    }
+
     return (
         <div id={'hw04'}>
             {currentText ? (
@@ -32,7 +30,8 @@ export const HW4 = () => {
                 <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
             )}
 
-            <input value={currentText} onChange={h}/>
+
+            <Input currentText={currentText} setCurrentText={setCurrentText}/>
 
             <Button name={"Сохранить"} callBack={handleSave}/>
 
