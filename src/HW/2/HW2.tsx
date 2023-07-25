@@ -24,7 +24,7 @@ export const HW2 = () => {
     // 2️⃣ Ваша задача: ❗ПОЧИНИТЬ ПРОЕКТ❗
     // - прописать типизацию, где необходимо
     // - починить все, что горит красным
-    // - дописать функциональность (где указано комментариями)
+    // - дописать функциональность (где указано комментар  иями)
     // - приложение должно компилироваться и запускаться в браузере
 
     // ❗ Массив с данными не трогаем!
@@ -39,7 +39,7 @@ export const HW2 = () => {
             {id: 6, name: 'James', age: 18, address: {street: '987 Pine Rd', city: 'Dallas'}},
             {id: 7, name: 'Jennifer', age: 21, address: {street: '654 Birch Ct', city: 'Seattle'}},
             {id: 8, name: 'Robert', age: 4, address: {street: '876 Spruce Way', city: 'San Francisco'}},
-            {id: 9, name: 'Jessica', age: 12, address: {street: '543 Willow Dr', city: 'San Francisco'}},
+             {id: 9, name: 'Jessica', age: 12, address: {street: '543 Willow Dr', city: 'San Francisco'}},
             {id: 10, name: 'Emily', age: 55, address: {street: '765 Aspen Blvd', city: 'Los Angeles'}},
         ]
     }
@@ -47,7 +47,7 @@ export const HW2 = () => {
     let [currentUsers, setCurrentUsers] = useState<UsersObjectType>(users);
 
     const filterUsers = () => {
-        console.log('filter')
+
         const filteredUsers = users.myFriends.filter((u) => {
             return u.address.city === "Los Angeles"
         });
